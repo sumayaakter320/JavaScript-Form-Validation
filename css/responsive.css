@@ -110,7 +110,7 @@
 /* * 4th device */
 @media (min-width: 576px) and (max-width: 767px) {
   .background {
-    padding: 60px 120px;
+    padding: 60px;
   }
 
   .form_inner form {
