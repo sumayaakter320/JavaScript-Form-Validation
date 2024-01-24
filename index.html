@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1>JavaScript Form Validation</h1> -->
+
+        <section id="js_form">
+            <div class="form_head">
+                <h2>Registration</h2>
+                <p>Powered by Sumaya</p>
+            </div>
+
+            <div class="form_inner">
+                <h4>Sign Up</h4>
+                <form action="#" id="myForm">
+                    <div id="success_msg">
+                        <img src="images/tick.png" alt="Well done!">
+                        Registration Successful!
+                    </div>
+
+                    <div class="form-input">
+                        <div class="input-style" id="input_style">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Your Name" id="user_name">
+                        </div>
+                        <div id="name_err" class="error_msg"></div>
+                    </div>
+
+                    <div class="form-input">
+                        <div class="input-style">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" placeholder="Your Email" id="email">
+                        </div>
+                        <div id="email_err" class="error_msg"></div>
+                    </div>
+
+                    <div class="form-input">
+                        <div class="input-style">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" id="password">
+                            <a href="#" id="password-toggle">Show</a>
+                        </div>
+                        <div id="password_err" class="error_msg"></div>
+                    </div>
+
+                    <div class="form_btn">
+                        <button type="submit" onclick="return form_validation()">Sign Up</button>
+                    </div>
+                </form>
+
+                <div class="form_btm">
+                    <p>Already have an account? ..
+                        <a href="#">Log in</a>
+                    </p>
+                </div>
+
+                <div class="form_btm">
+                    <span>Or,</span>
+                </div>
+
+                <div class="form_btn google-sign-up">
+                    <img src="images/google.png" alt="G">
+                    <a href="#">Sign up with Google</a>
+                </div>
+
+                <div class="form_btm">
+                    <p class="terms">By signing up to create an account I accept all <a href="#">Terms & Conditions</a>
+                        and <a href="#">Privacy
+                            Policy</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* ? Common CSS Start */
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  background: url("../images/bg.png")
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    17,
+    17,
+    17,
+    0.4
+  );
+  z-index: -1;
+}
+/* ? Common CSS End */
+
+/* * Form-design CSS Start */
+#js_form {
+  padding: 10px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #111;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 40px;
+}
+
+.form_head {
+  padding: 40px 30px;
+  margin: 0 400px;
+  background: linear-gradient(
+    to bottom,
+    #2f0086 0%,
+    #3f04ac 50%,
+    #3c1b8a 100%
+  );
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+
+  width: 32%;
+  overflow: hidden;
+  position: relative;
+}
+
+.form_head::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0px;
+  left: 0px;
+  box-shadow: -50px 50px 0 0
+    #fff;
+}
+
+.form_head h2 {
+  color: #f1f1f1;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Noto Serif",
+    serif;
+}
+
+.form_head p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Sevillana",
+    cursive;
+  font-style: italic;
+  letter-spacing: 5px;
+  padding-top: 8px;
+}
+
+.form_inner {
+  padding: 30px 40px;
+  margin: 0 400px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 32%;
+  overflow: hidden;
+  position: relative;
+}
+
+.form_inner::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  box-shadow: 50px -50px 0 0 #3c1b8a;
+}
+
+.form_inner h4 {
+  color: #3c1b8a;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Arimo",
+    sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form_inner form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.input-style {
+  display: flex;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.input-style input {
+  color: #222;
+  font-weight: 500;
+  font-family: "Arimo",
+    sans-serif;
+  background-color: transparent;
+  padding: 13px 7px;
+  border: none;
+  width: 100%;
+}
+
+.input-style
+  input::placeholder {
+  color: #0e042599;
+  font-weight: 400;
+}
+
+.input-style i {
+  color: rgba(14, 4, 37, 0.7);
+  align-self: center;
+  padding: 0 7px 0 15px;
+}
+
+.form_btn button {
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Arimo",
+    sans-serif;
+  border: none;
+  background-color: #2f0086;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* * form bottom */
+.form_btm {
+  margin-top: 15px;
+}
+
+.form_btm p {
+  color: #444;
+  font-size: 14px;
+  font-family: "Arimo",
+    sans-serif;
+  text-align: center;
+}
+
+.form_btn a {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Arimo",
+    sans-serif;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid
+    rgba(201, 201, 201, 0.85);
+}
+
+.form_btm span {
+  color: #444;
+  font-size: 16px;
+  font-family: "Arimo",
+    sans-serif;
+  text-align: center;
+  display: block;
+  padding: 6px 0;
+}
+
+.google-sign-up {
+  margin-top: 15px;
+  position: relative;
+}
+
+.google-sign-up img {
+  width: 20px;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form_btm .terms {
+  padding-top: 30px;
+}
+/* * Form-design CSS End */
+
+/* * Form-validation CSS Start */
+.error_msg {
+  position: relative;
+  color: #f1f1f1;
+  background: #d43131;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Arimo",
+    sans-serif;
+  padding: 8px 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.error_msg::after {
+  position: absolute;
+  content: "";
+  left: 38px;
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid
+    transparent;
+  border-right: 6px solid
+    transparent;
+  border-bottom: 6px solid
+    #d43131;
+}
+
+.error_msg i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fff;
+}
+/* * Form-validation CSS End */
+
+/* * password toggle css */
+#password-toggle {
+  padding: 13px 10px;
+  color: #444;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Arimo",
+    sans-serif;
+}
+
+/* * registration success msg css */
+#success_msg {
+  color: #3c1b8a;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Noto Serif",
+    serif;
+  display: none;
+}
