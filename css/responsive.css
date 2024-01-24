@@ -1,0 +1,28 @@
+/* * 1st device */
+@media (min-width: 1200px) {
+}
+
+/* * 2nd device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* * 3rd device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* * 4th device */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* * last device */
+@media (max-width: 575px) {
+  .form_head {
+    margin: 0 10px;
+    width: 93%;
+  }
+
+  .form_inner {
+    margin: 0 10px;
+    width: 93%;
+  }
+}
