@@ -178,8 +178,6 @@ let var_success_msg =
 form_submit.addEventListener(
   "submit",
   function (event) {
-    // event.preventDefault(); // Prevent the default form submission behavior
-
     // Display success message
     var_success_msg.style.display =
       "block";
@@ -189,5 +187,50 @@ form_submit.addEventListener(
     var_name.value = "";
     var_email.value = "";
     var_password.value = "";
+
+    // Set a timeout to hide the success message after 3000 milliseconds (3 seconds)
+    setTimeout(function () {
+      var_success_msg.style.display =
+        "none";
+    }, 1000);
   }
 );
+
+// success msg fade out
+// if (var_success_msg.value != "") {
+//   function fadeOutEffect() {
+//     var fadeTarget =
+//       document.getElementById(
+//         "target"
+//       );
+//     var fadeEffect =
+//       setInterval(
+//         function () {
+//           if (
+//             !fadeTarget.style
+//               .opacity
+//           ) {
+//             fadeTarget.style.opacity = 1;
+//           }
+//           if (
+//             fadeTarget.style
+//               .opacity > 0
+//           ) {
+//             fadeTarget.style.opacity -= 0.3;
+//           } else {
+//             clearInterval(
+//               fadeEffect
+//             );
+//           }
+//         },
+//         100
+//       );
+//   }
+
+//   document
+//     .getElementById("target")
+//     .addEventListener(
+//       "click",
+//       fadeOutEffect
+//     );
+// }
